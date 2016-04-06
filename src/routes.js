@@ -9,6 +9,7 @@ import DemoTablePage from 'containers/__demo/TablePage'
 import DemoLoginPage from 'containers/__demo/LoginPage'
 
 import DemoTodosPage from 'containers/__demo/TodosPage'
+import DataTablePage from 'containers/DataTablePage'
 
 
 export default (
@@ -16,9 +17,10 @@ export default (
         <Route path="__demo">
             <Route path="table" component={DemoTablePage}/>
             <Route path="login" component={DemoLoginPage}/>
-
             <Route path="todos" component={DemoTodosPage}/>
+
         </Route>
+        <Route path="dataTable" component={DataTablePage}/>
         <Route path="*" component={NoMatch}/>
     </Route>
 )
